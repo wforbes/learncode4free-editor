@@ -65,7 +65,9 @@ export default {
 	methods: {
 		runCode(){
 			let editor = this.$refs.ace.editor;
-			console.log(editor);
+			let val = editor.getValue()
+			console.log(val);
+			//console.log(editor);
 		},
 		editorInit(){
             require('brace/ext/language_tools') //language extension prerequsite...
